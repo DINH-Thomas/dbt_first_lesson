@@ -1,0 +1,12 @@
+sources:
+  - name: dbt_carrefour
+    tables:
+      - name: crf_hyp_sales_fr_data
+        columns :
+          - name : barcode_ean13
+            data_tests:
+              - not_null
+      - name: crf_prx_sales_fr_data
+      - name: crf_sales_group_data
+      - name: crf_sup_sales_fr_data
+      - name: ferrero_sales_per_week_dirty

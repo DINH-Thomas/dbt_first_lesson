@@ -9,7 +9,7 @@ source as (
 renamed as (
 
     select
-        barcode_ean13,
+        CAST(barcode_ean13 as INT) AS barcode_ean13,
         site_key,
         product_category,
         pdt_sub_category,
