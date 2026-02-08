@@ -40,6 +40,6 @@ models:
     # Applies to all files under staging
     staging :
       +materialized: view
-
+    # Applies to all files under marts
     marts :
       +materialized: table
